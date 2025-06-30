@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prety Prima Rezka</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f4f6fa;
+      color: #2d3436;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      background-color: #6c5ce7;
+      color: white;
+      padding: 50px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .header-right {
+      flex: 2;
+      padding: 20px;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      background-color: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: #6c5ce7;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #eee;
+    }
+
+    section {
+      margin: 60px 0;
+    }
+
+    h2 {
+      color: #6c5ce7;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .about,
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .about > div,
+    .contact > div {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skills li {
+      list-style: none;
+      background: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      font-weight: 600;
+      color: #6c5ce7;
+      transition: 0.3s ease;
+    }
+
+    .skills li:hover {
+      background-color: #6c5ce7;
+      color: #fff;
+    }
+
+    .project-card {
+      background: #ffffff;
+      margin: auto;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 600px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #6c5ce7;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 14px;
+      margin-top: 80px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header-right {
+        padding-top: 20px;
+      }
+
+      .about,
+      .contact {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <img src="assets/foto-profil.jpg" alt="Foto Profil" class="profile-img" />
+    </div>
+    <div class="header-right">
+      <h1>Prety Prima Rezka</h1>
+      <p>Mahasiswa Sistem Informasi - Universitas Pamulang Serang</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#tentang">Tentang Saya</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <section id="tentang" class="container">
+    <h2>Tentang Saya</h2>
+    <div class="about">
+      <div>
+        <p>Saya Prety Prima Rezka, mahasiswa aktif jurusan Sistem Informasi. Saya memiliki semangat tinggi dalam dunia teknologi, khususnya dalam bidang desain digital dan pengembangan aplikasi. Keingintahuan yang besar mendorong saya untuk terus belajar dan berinovasi melalui berbagai proyek kreatif dan kolaboratif.</p>
+      </div>
+      <div>
+        <img src="assets/foto-profil.jpg" alt="Foto About" style="width:100%; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); object-fit: cover;">
+      </div>
+    </div>
+  </section>
+
+  <section id="keahlian" class="container">
+    <h2>Keahlian</h2>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Microsoft Word</li>
+      <li>Microsoft Excel</li>
+      <li>PowerPoint</li>
+      <li>Canva</li>
+      <li>Python</li>
+    </ul>
+  </section>
+
+  <section id="proyek" class="container">
+    <h2>Proyek</h2>
+    <div class="project-card">
+      <h3>Desain Banner Promosi</h3>
+      <p>Menghasilkan desain banner promosi menarik menggunakan Canva dan Photoshop untuk berbagai keperluan organisasi kampus dan bisnis lokal. Fokus utama pada visual yang kuat dan pesan yang mudah dipahami.</p>
+    </div>
+  </section>
+
+  <section id="kontak" class="container">
+    <h2>Kontak</h2>
+    <div class="contact">
+      <div>
+        <p><strong>Email:</strong> pretyrezka@gmail.com</p>
+        <p><strong>Instagram:</strong> @prety.rezka</p>
+      </div>
+      <div>
+        <p><strong>WhatsApp:</strong> 081234567890</p>
+        <p><strong>TikTok:</strong> @prety.rezka</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Prety Prima Rezka</p>
+  </footer>
+
+</body>
+</html>
